@@ -1,0 +1,44 @@
+---- Insert statements for the Car table
+--CREATE TABLE Car (
+--    id INT AUTO_INCREMENT PRIMARY KEY,
+--    make VARCHAR(255) NOT NULL,
+--    model VARCHAR(255) NOT NULL,
+--    version VARCHAR(255) NOT NULL,
+--    number_of_doors INT NOT NULL,
+--    co2_emission INT NOT NULL,
+--    gross_price DECIMAL(10, 2) NOT NULL,
+--    nett_price DECIMAL(10, 2) NOT NULL
+--);
+--CREATE TABLE Customer (
+--    id INT AUTO_INCREMENT PRIMARY KEY,
+--    name VARCHAR(255) NOT NULL,
+--    street VARCHAR(255) NOT NULL,
+--    house_number VARCHAR(20),
+--    zip_code VARCHAR(10) NOT NULL,
+--    place VARCHAR(255) NOT NULL,
+--    email_address VARCHAR(255) NOT NULL,
+--    phone_number VARCHAR(20) NOT NULL
+--);
+
+INSERT INTO Car (make, model, version, numberOfDoors, co2Emission, grossPrice, nettPrice) VALUES
+    ('Toyota', 'Camry', 'LE', 4, 120, 25000.00, 22000.00),
+    ('Honda', 'Civic', 'LX', 4, 110, 22000.00, 19500.00),
+    ('Ford', 'Fusion', 'SE', 4, 130, 24000.00, 21000.00),
+    ('Chevrolet', 'Malibu', 'LT', 4, 125, 23000.00, 20500.00),
+    ('Nissan', 'Altima', 'SV', 4, 115, 23500.00, 21000.00),
+    ('Hyundai', 'Elantra', 'SE', 4, 120, 22000.00, 19500.00),
+    ('Volkswagen', 'Passat', 'S', 4, 125, 25000.00, 22000.00),
+    ('Mazda', 'Mazda6', 'Sport', 4, 130, 24000.00, 21000.00),
+    ('Subaru', 'Legacy', 'Base', 4, 120, 23000.00, 20500.00),
+    ('Kia', 'Optima', 'LX', 4, 115, 23500.00, 21000.00);
+INSERT INTO Customer (name, street, houseNumber, zipCode, place, emailAddress, phoneNumber) VALUES
+    ('John Smith', '123 Main St', 'Apt 4B', '12345', 'Cityville', 'john.smith@email.com', '+1-555-123-4567'),
+    ('Alice Johnson', '456 Elm St', 'Unit 7', '54321', 'Townsburg', 'alice@email.com', '+1-555-987-6543'),
+    ('Bob Wilson', '789 Oak Ave', 'Suite 2C', '67890', 'Villagetown', 'bob@email.com', '+1-555-789-1234'),
+    ('Emily Davis', '101 Pine Rd', 'Apartment 5', '98765', 'Hillside', 'emily@email.com', '+1-555-456-7890'),
+    ('Michael Lee', '321 Cedar Ln', 'Unit 3D', '45678', 'Woodsville', 'michael@email.com', '+1-555-234-5678'),
+    ('Sarah Johnson', '555 Maple Dr', 'Apt 6E', '23456', 'Greenville', 'sarah@email.com', '+1-555-678-9012'),
+    ('David Brown', '888 Birch Rd', 'Suite 1A', '34567', 'Mapleton', 'david@email.com', '+1-555-345-6789'),
+    ('Jennifer White', '222 Redwood Ave', 'Unit 4B', '78901', 'Pineville', 'jennifer@email.com', '+1-555-567-8901'),
+    ('Robert Smith', '777 Willow St', 'Apartment 8', '12345', 'Groveville', 'robert@email.com', '+1-555-890-1234'),
+    ('Linda Johnson', '444 Elmwood Dr', 'Apt 9C', '23456', 'Oakville', 'linda@email.com', '+1-555-901-2345');
